@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ede9e1">
+  <title>Elsewhere — Sign in</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="stage">
+    <section class="scene" aria-label="Elsewhere sign in">
+      <div class="photo" aria-hidden="true"></div>
+      <div class="shade" aria-hidden="true"></div>
+      <header class="topbar"><a class="brand" href="#" aria-label="Elsewhere home"><span class="brand-mark">✳</span> elsewhere<span class="brand-dot">.</span></a><span class="top-right">YOUR NEXT CHAPTER STARTS HERE <span class="star">✦</span></span></header>
+      <div class="layout">
+        <div class="story">
+          <div class="eyebrow"><span class="line"></span> THE WORLD IS WAITING</div>
+          <h1>Go a little<br><em>further.</em></h1>
+          <p>Beautiful places. Unforgettable moments.<br>Find your way back to what matters.</p>
+          <div class="location"><span class="location-icon">↗</span><span>ATLANTIC COAST <small>50° 02′ N, 5° 39′ W</small></span></div>
+        </div>
+        <section class="auth" aria-labelledby="login-title">
+          <div class="auth-top"><span class="tiny-mark">✳</span><span>MEMBERS ACCESS <span class="access-number">/ 001</span></span></div>
+          <h2 id="login-title">Welcome back<span class="period">.</span></h2>
+          <p class="subheading">Sign in to pick up where you left off.</p>
+          <form id="loginForm" novalidate>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <div class="password-heading"><label for="password">Password</label><a href="#" id="forgot">Forgot password?</a></div>
+            <div class="password-wrap"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required minlength="6"><button type="button" class="show-password" id="togglePassword" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.7"/></svg></button></div>
+            <button type="submit" class="sign-in">Sign in <span aria-hidden="true">↗</span></button>
+          </form>
+          <div class="divider"><span></span>or continue with<span></span></div>
+          <button type="button" class="google" id="googleBtn"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.27 5.48-4.8 7.18l7.73 6C44.38 38.03 46.98 31.88 46.98 24.55z"/><path fill="#FBBC05" d="M10.53 28.59A14.4 14.4 0 0 1 9.75 24c0-1.59.27-3.13.76-4.59l-7.98-6.2A23.8 23.8 0 0 0 0 24c0 3.87.93 7.51 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.92-2.13 15.9-5.8l-7.73-6c-2.15 1.45-4.92 2.3-8.17 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg> Continue with Google <span class="demo">DEMO</span></button>
+          <p class="register">New around here? <a href="#" id="register">Create an account <span>↗</span></a></p>
+          <p class="notice" id="notice" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+      <footer class="bottom"><span>© 2026 ELSEWHERE STUDIO</span><span>MADE FOR THE CURIOUS <span class="star">✳</span></span></footer>
+    </section>
+  </main>
+</body>
+</html>
